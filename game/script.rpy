@@ -70,6 +70,8 @@ label start:
 
     "For you are now the last of the Kai—you are now the Lone Wolf."
 
+    call creation
+
     # This ends the game.
 
     return
