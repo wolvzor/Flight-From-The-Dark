@@ -7,43 +7,59 @@ init python:
     player_backpack_items = []
     player_gold_crowns = 0
     player_special_items = []
+    discipline_list = [('Camouflage','Camouflage'),('Hunting','Hunting'),('Sixth Sense','Sixth Sense'),('Tracking','Tracking'),('Healing','Healing'),('Weaponskill','Weaponskill'),('Mindshield','Mindshield'),('Mindblast','Mindblast'),('Animal Kinship','Animal Kinship'),('Mind Over Matter','Mind Over Matter')]
+    player_discipline_list = []
 
     # TODO: Track deficits when items are lost in gameplay
     def random_item(random_int):
         statement = ''
         if (random_int == 1):
+            global player_weapons
             player_weapons.append("Sword");
             statement = "a Sword"
         elif (random_int == 2):
+            global player_special_items
             player_special_items.append("Helmet");
+            global endurance_score
             endurance_score = endurance_score + 2;
+            global endurance_current
             endurance_current = endurance_current + 2;
             statement = "a Helmet"
         elif (random_int == 3):
+            global player_backpack_items
             player_backpack_items.append("Meal");
             player_backpack_items.append("Meal");
             statement = "two Meals"
         elif (random_int == 4):
+            global player_special_items
             player_special_items.append("Chainmail Waistcoat");
+            global endurance_score
             endurance_score = endurance_score + 4;
+            global endurance_current
             endurance_current = endurance_current + 4;
             statement = "a Chainmail Waistcoat"
         elif (random_int == 5):
+            global player_weapons
             player_weapons.append("Mace");
             statement = "a Mace"
         elif (random_int == 6):
+            global player_backpack_items
             player_backpack_items.append("Healing Potion");
             statement = "a Healing Potion"
         elif (random_int == 7):
+            global player_weapons
             player_weapons.append("Quarterstaff");
             statement = "a Quarterstaff"
         elif (random_int == 8):
+            global player_weapons
             player_weapons.append("Spear");
             statement = "a Spear"
         elif (random_int == 9):
+            global player_gold_crowns
             player_gold_crowns += 12;
             statement = "twelve Gold Crowns"
         else:
+            global player_weapons
             player_weapons.append("Broadsword");
             statement = "a Broadsword"
         return statement
@@ -77,9 +93,6 @@ label creation:
     # TODO: Allow weaponskill to be added multiple times, but not for the same weapon
 
     "Pick your first discipline."
-
-    $ discipline_list = [('Camouflage','Camouflage'),('Hunting','Hunting'),('Sixth Sense','Sixth Sense'),('Tracking','Tracking'),('Healing','Healing'),('Weaponskill','Weaponskill'),('Mindshield','Mindshield'),('Mindblast','Mindblast'),('Animal Kinship','Animal Kinship'),('Mind Over Matter','Mind Over Matter')]
-    $ player_discipline_list = []
 
     $ first_discipline = renpy.display_menu(discipline_list)
     $ player_discipline_list.append(first_discipline)
@@ -147,7 +160,7 @@ label creation:
         "Yes":
             call tutorial_carrying
 
-        "No" :
+        "No":
             pass
 
     menu:
@@ -155,14 +168,39 @@ label creation:
         "Would you like an explanation on how equipment is used in the game?"
 
         "Yes":
-
             call tutorial_equipment
 
-        "No" :
+        "No":
             pass
 
-    "Would you like to see the rules for combat?"
+    menu:
 
-    # TODO LATER BRIENDS
+        "Would you like to see the rules for combat?"
 
-    return
+        "Yes":
+            call tutorial_combat
+
+        "No":
+            pass
+
+    menu:
+
+        "Would you like to learn about the levels of kai training?"
+
+        "Yes":
+            call tutorial_training
+
+        "No":
+            pass
+
+    #Kai Wisdom
+    "Your mission will be one of great danger, for the Darklords and their servants are a cruel and fierce enemy who give and expect no mercy."
+    "Use the map to help you steer a correct course for the capital. Make notes as you progress through the story, for they will be of great help in future adventures."
+    "Many things that you find will aid you during the adventure."
+    "Some Special Items will be of use in future Lone Wolf adventures and others may be red herrings of no real use at all, so be selective in what you decide to keep."
+    "There are many routes to the King, but only one involves a minimum of danger."
+    "With a wise choice of Kai Disciplines and a great deal of courage, any player should be able to complete the mission, no matter how weak their initial COMBAT SKILL or ENDURANCE points score."
+    "The honour and memory of the Kai Lords will go with you on your perilous journey."
+    "Good luck!"
+
+    call section1
