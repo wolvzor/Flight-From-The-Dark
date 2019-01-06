@@ -8,7 +8,7 @@ init python:
     player_gold_crowns = 0
     player_special_items = []
 
-    # TODO: Track defecits when items are lost in gameplay
+    # TODO: Track deficits when items are lost in gameplay
     def random_item(random_int):
         statement = ''
         if (random_int == 1):
@@ -140,12 +140,29 @@ label creation:
 
     "You also found one of the following: %(statement)s."
 
-    "Would you like an explanation of how much of each item you can carry?"
+    menu:
 
-    # TODO: Add menu options here for explanations on item encumbrance
+        "Would you like an explanation of how much of each item you can carry?"
 
-    "Would you like an explanation on how equipment is used in the game?"
+        "Yes":
+            call tutorial_carrying
 
-    # TODO: Add menu options here for explanations for equipment use
+        "No" :
+            pass
+
+    menu:
+
+        "Would you like an explanation on how equipment is used in the game?"
+
+        "Yes":
+
+            call tutorial_equipment
+
+        "No" :
+            pass
+
+    "Would you like to see the rules for combat?"
+
+    # TODO LATER BRIENDS
 
     return
