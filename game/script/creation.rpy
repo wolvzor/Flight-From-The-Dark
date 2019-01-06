@@ -21,29 +21,51 @@ label creation:
 
     "As all of the Disciplines may be of use to you at some point on your perilous quest, pick your five with care. The correct use of a Discipline at the right time can save your life."
 
-    menu:
-        "Pick your first discipline."
-        "Camouflage":
-            $ first_discipline = "Camouflage"
-        "Hunting":
-            $ first_discipline = "Hunting"
-        "Sixth Sense":
-            $ first_discipline = "Sixth Sense"
-        "Tracking":
-            $ first_discipline = "Tracking"
-        "Healing":
-            $ first_discipline = "Healing"
-        "Weaponskill":
-            $ first_discipline = "Weaponskill"
-        "Mindshield":
-            $ first_discipline = "Mindshield"
-        "Mindblast":
-            $ first_discipline = "Mindblast"
-        "Animal Kinship":
-            $ first_discipline = "Animal Kinship"
-        "Mind Over Matter":
-            $ first_discipline = "Mind Over Matter"
+    # TODO: Make this a function
+    # TODO: Add random weaponization to weaponskill
+    # TODO: Allow weaponskill to be added multiple times, but not for the same weapon
+
+    "Pick your first discipline."
+
+    $ discipline_list = [('Camouflage','Camouflage'),('Hunting','Hunting'),('Sixth Sense','Sixth Sense'),('Tracking','Tracking'),('Healing','Healing'),('Weaponskill','Weaponskill'),('Mindshield','Mindshield'),('Mindblast','Mindblast'),('Animal Kinship','Animal Kinship'),('Mind Over Matter','Mind Over Matter')]
+    $ player_discipline_list = []
+
+    $ first_discipline = renpy.display_menu(discipline_list)
+    $ player_discipline_list.append(first_discipline)
+    $ discipline_list = [item for item in discipline_list if item[0] != first_discipline]
 
     "You picked %(first_discipline)s as your first discipline."
+    "Pick your second discipline."
+
+    $ second_discipline = renpy.display_menu(discipline_list)
+    $ player_discipline_list.append(second_discipline)
+    $ discipline_list = [item for item in discipline_list if item[0] != second_discipline]
+
+    "You picked %(second_discipline)s as your second discipline."
+    "Pick your third discipline."
+
+    $ third_discipline = renpy.display_menu(discipline_list)
+    $ player_discipline_list.append(third_discipline)
+    $ discipline_list = [item for item in discipline_list if item[0] != third_discipline]
+
+    "You picked %(third_discipline)s as your third discipline."
+    "Pick your fourth discipline."
+
+    $ fourth_discipline = renpy.display_menu(discipline_list)
+    $ player_discipline_list.append(fourth_discipline)
+    $ discipline_list = [item for item in discipline_list if item[0] != fourth_discipline]
+
+    "You picked %(fourth_discipline)s as your fourth discipline."
+    "Pick your fifth discipline."
+
+    $ fifth_discipline = renpy.display_menu(discipline_list)
+    $ player_discipline_list.append(fifth_discipline)
+    $ discipline_list = [item for item in discipline_list if item[0] != fifth_discipline]
+    # TODO: make this more human readable
+    $ player_discipline_list_string = ', '.join(player_discipline_list)
+
+    "You picked %(fifth_discipline)s as your fifth discipline."
+
+    "Your total disciplines are %(player_discipline_list_string)s"
 
     return
