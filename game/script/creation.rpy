@@ -1,3 +1,54 @@
+init python:
+    combat_score = 0
+    endurance_score = 0
+    combat_score_current = 0
+    endurance_current = 0
+    player_weapons = []
+    player_backpack_items = []
+    player_gold_crowns = 0
+    player_special_items = []
+
+    # TODO: Track defecits when items are lost in gameplay
+    def random_item(random_int):
+        statement = ''
+        if (random_int == 1):
+            player_weapons.append("Sword");
+            statement = "a Sword"
+        elif (random_int == 2):
+            player_special_items.append("Helmet");
+            endurance_score = endurance_score + 2;
+            endurance_current = endurance_current + 2;
+            statement = "a Helmet"
+        elif (random_int == 3):
+            player_backpack_items.append("Meal");
+            player_backpack_items.append("Meal");
+            statement = "two Meals"
+        elif (random_int == 4):
+            player_special_items.append("Chainmail Waistcoat");
+            endurance_score = endurance_score + 4;
+            endurance_current = endurance_current + 4;
+            statement = "a Chainmail Waistcoat"
+        elif (random_int == 5):
+            player_weapons.append("Mace");
+            statement = "a Mace"
+        elif (random_int == 6):
+            player_backpack_items.append("Healing Potion");
+            statement = "a Healing Potion"
+        elif (random_int == 7):
+            player_weapons.append("Quarterstaff");
+            statement = "a Quarterstaff"
+        elif (random_int == 8):
+            player_weapons.append("Spear");
+            statement = "a Spear"
+        elif (random_int == 9):
+            player_gold_crowns += 12;
+            statement = "twelve Gold Crowns"
+        else:
+            player_weapons.append("Broadsword");
+            statement = "a Broadsword"
+        return statement
+
+
 label creation:
 
     "During your training as a Kai Lord you have developed fighting prowess—COMBAT SKILL and physical stamina—ENDURANCE."
@@ -67,5 +118,34 @@ label creation:
     "You picked %(fifth_discipline)s as your fifth discipline."
 
     "Your total disciplines are %(player_discipline_list_string)s"
+
+    "You are dressed in the green tunic and cloak of a Kai initiate. You have little with you to arm yourself for survival."
+
+    # TODO: Consider enums for objects?
+    $ player_weapons = ['Axe']
+    $ player_backpack_items = ['Meal']
+
+    "All you possess is an Axe, and a Backpack containing 1 Meal."
+
+    $ player_gold_crowns = renpy.random.randint(0,9)
+
+    "Hanging from your waist is a leather pouch containing %(player_gold_crowns)d Gold Crowns."
+
+    $ player_special_items = ['Map of Sommerlund']
+
+    "You discover amongst the smoking ruins of the monastery, a Map of Sommerlund showing the capital city of Holmgard and the land of Durenor, far to the east. You place the Map inside your tunic for safety."
+
+    $ random_item_num = renpy.random.randint(0,9)
+    $ statement = random_item(random_item_num)
+
+    "You also found one of the following: %(statement)s."
+
+    "Would you like an explanation of how much of each item you can carry?"
+
+    # TODO: Add menu options here for explanations on item encumbrance
+
+    "Would you like an explanation on how equipment is used in the game?"
+
+    # TODO: Add menu options here for explanations for equipment use
 
     return
