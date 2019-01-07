@@ -1,4 +1,4 @@
-label section1:
+label section001:
 
     "You must make haste for you sense it is not safe to linger by the smoking remains of the ruined monastery. The black-winged beasts could return at any moment."
     "You must set out for the Sommlending capital of Holmgard and tell the King the terrible news of the massacre: that the whole élite of Kai warriors, save yourself, have been slaughtered."
@@ -12,7 +12,7 @@ label section1:
         "If you wish to use your Kai Discipline of Sixth Sense, turn to 141" if 'Sixth Sense' in player_discipline_list:
             call section141
         "If you wish to take the right path into the wood, turn to 85.":
-            call section85
+            call section085
         "If you wish to follow the left track, turn to 275.":
             call section275
 

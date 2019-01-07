@@ -203,4 +203,4 @@ label creation:
     "The honour and memory of the Kai Lords will go with you on your perilous journey."
     "Good luck!"
 
-    call section1
+    call section001
