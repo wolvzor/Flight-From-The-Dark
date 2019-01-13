@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section141:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "Your Sixth Sense has warned you that some of the creatures that attacked the monastery are searching the two paths for any survivors of their raid, but you can avoid both tracks by making your way through the undergrowth of the woods."
 

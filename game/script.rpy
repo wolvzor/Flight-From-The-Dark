@@ -1,28 +1,21 @@
 ﻿# The script of the game goes in this file.
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen")
-
-
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    $ player_weapons = []
+    $ player_backpack_items = []
+    $ player_gold_crowns = 0
+    $ player_special_items = []
+    $ discipline_list = [('Camouflage','Camouflage'),('Hunting','Hunting'),('Sixth Sense','Sixth Sense'),('Tracking','Tracking'),('Healing','Healing'),('Weaponskill','Weaponskill'),('Mindshield','Mindshield'),('Mindblast','Mindblast'),('Animal Kinship','Animal Kinship'),('Mind Over Matter','Mind Over Matter')]
+    $ player_discipline_list = []
+    $ combat_score = 0
+    $ combat_score_current = 0
+    $ endurance = 0
+    $ endurance_current = 0
 
     scene bg map
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    # show eileen happy
-
-    # These display lines of dialogue.
 
     "In the northern land of Sommerlund, it has been the custom for many centuries to send the children of the Warrior Lords to the monastery of Kai."
 

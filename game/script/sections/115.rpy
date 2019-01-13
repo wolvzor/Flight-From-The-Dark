@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section115:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "You stumble into the first building and fall to the floor exhausted."
     "You can smell cooked meat. You notice a small cauldron hanging over the embers of a dying fire, and a large oak table that has been set for a meal. Whoever lived here must have left in a great hurry this very morning."

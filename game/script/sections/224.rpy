@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section224:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "You have ridden several miles and have seen no sign of refugees or of the enemy. You race on towards a high ridge in the middle distance. You should be able to see the capital from there."
 

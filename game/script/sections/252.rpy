@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section252:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "In the centre of a small clearing you see a group of humans talking excitedly and gesturing wildly with their hands. There are two children, three men, and a woman."
     "Their belongings are wrapped in bundles which they carry slung over their shoulders. Their clothes look well made and expensive but they are dirty and torn."

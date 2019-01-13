@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section235:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "The Prince’s horse is indeed a magnificent animal, fast and sure of foot. You gallop along the twisting track as if it were a straight highway, until the noise of battle has disappeared far behind you."
 

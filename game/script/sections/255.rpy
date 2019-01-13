@@ -1,7 +1,6 @@
-init python:
-    pass
-
 label section255:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "The creature that you now face is a Gourgaz, one of a race of cold-blooded reptilian creatures that dwell deep in the treacherous Maakenmire swamps. Their favourite food is human flesh!"
 

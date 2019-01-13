@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section083:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "You have run about a mile when three soldiers appear from beneath a small footbridge. They demand that you halt and drop your weapons and equipment."
 

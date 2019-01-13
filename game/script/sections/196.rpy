@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section196:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "You follow the man into a small library off the main hall. He pushes one of the many books on the shelves which line all four walls, and you hear a metallic click. One section of the bookcase slowly slides back to reveal a hidden passage."
 

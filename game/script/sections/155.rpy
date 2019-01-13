@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section155:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "As you approach, the group of people stop talking. You can see by their expressions that they recognize your green Kai cloak."
     "Slowly, one of the men extends his hand in friendship and says, ‘My Lord, we had heard a rumour that the Kai were destroyed. Heaven be praised that it is not so. We feared all was lost.’"

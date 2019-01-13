@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section070:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     # TODO This has a picture! https://www.projectaon.org/en/xhtml/lw/01fftd/sect70.htm
     "You have reached a small bridge. A track follows the stream towards the east. A much narrower path disappears into thick forest towards the south."

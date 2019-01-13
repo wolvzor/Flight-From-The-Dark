@@ -11,6 +11,12 @@ This is very much a WIP; updates will be sporadic at best.
 - Death management / screen
 - Healing Discipline (heals per each non-combat scene)
 
+# Bug Fixes
+- Saving now maintains stat state
+
+# Outstanding Bugs
+- No random item given at character creation
+
 # TODO 
 - Basic combat functions
 - Inventory management
@@ -19,9 +25,6 @@ This is very much a WIP; updates will be sporadic at best.
 - Weaponskill bonus
 - Multiple weaponskill selection
 - Main stat/information screen
-
-# Bugs to fix
-- Saving currently does not maintain stats
 
 # Long-Term
 - All paths

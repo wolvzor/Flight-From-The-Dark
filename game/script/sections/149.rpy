@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section149:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "As you ride along the highway, you notice that light is getting worse. It will soon be completely dark—and impossible to see any dangers that may lurk ahead. You decide to hide and rest at the wood’s edge until morning."
 

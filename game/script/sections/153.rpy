@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section153:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     # TODO this has a picture! https://www.projectaon.org/en/xhtml/lw/01fftd/sect153.htm
     "Before you are the tall grey-white walls and glimmering spires of Holmgard, the city’s banners fluttering from the battlements in the fresh morning breeze."

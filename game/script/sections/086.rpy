@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section086:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "You soon reach another crossroads."
 

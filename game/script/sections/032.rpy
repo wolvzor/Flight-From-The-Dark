@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section032:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "You have ridden about three miles when, in the distance, you spot the unmistakable silhouette of five large Doomwolves. Riding on their backs are Giaks. They seem to be going on ahead to where the path leads down into an open meadow."
     "Suddenly, one of the Giaks leaves the others and begins to ride back along the path towards you."

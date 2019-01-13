@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section332:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "You walk for nearly ten minutes along a dark and winding corridor, and then start to climb a steep staircase to a small wooden door."
     "The man presses a secret catch and the door opens. You enter a large, plushly decorated bedroom with a huge marble bath that takes up one corner of the room."

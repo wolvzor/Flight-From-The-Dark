@@ -1,6 +1,6 @@
 init python:
 
-    def passive_heal_check():
-        if 'Healing' in player_discipline_list and endurance_current > endurance_score:
+    def passive_heal_check(endurance_current, endurance):
+        if 'Healing' in player_discipline_list and endurance_current > endurance:
             endurance_current += 1
-        return
+        return endurance_current

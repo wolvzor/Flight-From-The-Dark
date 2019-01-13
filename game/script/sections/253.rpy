@@ -1,7 +1,6 @@
-init python:
-    pass
-
 label section253:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "The Doomwolves are soon on you and you must fight them one at a time. You cannot evade."
 

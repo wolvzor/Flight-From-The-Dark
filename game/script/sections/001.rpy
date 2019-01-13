@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section001:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "You must make haste for you sense it is not safe to linger by the smoking remains of the ruined monastery. The black-winged beasts could return at any moment."
     "You must set out for the Sommlending capital of Holmgard and tell the King the terrible news of the massacre: that the whole élite of Kai warriors, save yourself, have been slaughtered."

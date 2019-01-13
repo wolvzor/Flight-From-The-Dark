@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section350:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     #TODO This has a picture! https://www.projectaon.org/en/xhtml/lw/01fftd/sect350.htm
 

@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section201:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "You follow the rough track for nearly an hour when you notice ahead of you another wider path branching off towards the south."
 

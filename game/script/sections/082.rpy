@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section082:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "The giant Gourgaz lies dead at your feet. His evil followers hiss at you and then fall back from the bridge. The Prince’s soldiers form a protective wall around you and their dying leader with their shields. Black arrows whistle past your head."
 

@@ -1,14 +1,4 @@
 init python:
-    combat_score = 0
-    endurance_score = 0
-    combat_score_current = 0
-    endurance_current = 0
-    player_weapons = []
-    player_backpack_items = []
-    player_gold_crowns = 0
-    player_special_items = []
-    discipline_list = [('Camouflage','Camouflage'),('Hunting','Hunting'),('Sixth Sense','Sixth Sense'),('Tracking','Tracking'),('Healing','Healing'),('Weaponskill','Weaponskill'),('Mindshield','Mindshield'),('Mindblast','Mindblast'),('Animal Kinship','Animal Kinship'),('Mind Over Matter','Mind Over Matter')]
-    player_discipline_list = []
 
     # TODO: Track deficits when items are lost in gameplay
     def random_item(random_int):
@@ -20,9 +10,7 @@ init python:
         elif (random_int == 2):
             global player_special_items
             player_special_items.append("Helmet");
-            global endurance_score
             endurance_score = endurance_score + 2;
-            global endurance_current
             endurance_current = endurance_current + 2;
             statement = "a Helmet"
         elif (random_int == 3):
@@ -33,9 +21,7 @@ init python:
         elif (random_int == 4):
             global player_special_items
             player_special_items.append("Chainmail Waistcoat");
-            global endurance_score
             endurance_score = endurance_score + 4;
-            global endurance_current
             endurance_current = endurance_current + 4;
             statement = "a Chainmail Waistcoat"
         elif (random_int == 5):
@@ -148,10 +134,11 @@ label creation:
 
     "You discover amongst the smoking ruins of the monastery, a Map of Sommerlund showing the capital city of Holmgard and the land of Durenor, far to the east. You place the Map inside your tunic for safety."
 
-    $ random_item_num = renpy.random.randint(0,9)
-    $ statement = random_item(random_item_num)
+    # TODO Fix random number once saves have been fixed
+    # $ random_item_num = renpy.random.randint(0,9)
+    # $ statement = random_item(random_item_num)
 
-    "You also found one of the following: %(statement)s."
+    # "You also found one of the following: %(statement)s."
 
     menu:
 
@@ -203,4 +190,5 @@ label creation:
     "The honour and memory of the Kai Lords will go with you on your perilous journey."
     "Good luck!"
 
+    $ renpy.retain_after_load()
     call section001

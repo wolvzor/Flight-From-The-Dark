@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section222:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "As you go on you discover a forest path that divides at the point you join it."
 

@@ -1,7 +1,6 @@
-init python:
-    passive_heal_check()
-
 label section028:
+
+    $ passive_heal_check(endurance_current, endurance)
 
     "After a few hundred yards, the path joins another one running north to south."
 
