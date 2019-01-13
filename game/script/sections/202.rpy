@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section202:
 
     "Urging your horse forward, you gallop down the long stretch of highway towards the capital. After only a few minutes your horse suddenly slows and finally limps to a halt."

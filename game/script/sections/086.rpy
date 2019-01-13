@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section086:
 
     "You soon reach another crossroads."

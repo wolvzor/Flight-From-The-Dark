@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section032:
 
     "You have ridden about three miles when, in the distance, you spot the unmistakable silhouette of five large Doomwolves. Riding on their backs are Giaks. They seem to be going on ahead to where the path leads down into an open meadow."

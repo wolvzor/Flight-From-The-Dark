@@ -1,3 +1,6 @@
+init python:
+    pass
+
 label section253:
 
     "The Doomwolves are soon on you and you must fight them one at a time. You cannot evade."

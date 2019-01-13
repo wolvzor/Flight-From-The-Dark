@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section278:
 
     "You quickly leave the path and gallop off along the track heading towards the capital."

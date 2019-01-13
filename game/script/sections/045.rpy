@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section045:
 
     "These men are not what they seem. The tunic of the leader is genuine but it is heavily bloodstained around the collar, as if its true owner had been murdered. Their weapons are not army issue, but expensive and lavishly decorated like the weapons made by the armourers of Durenor."

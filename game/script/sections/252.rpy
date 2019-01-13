@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section252:
 
     "In the centre of a small clearing you see a group of humans talking excitedly and gesturing wildly with their hands. There are two children, three men, and a woman."

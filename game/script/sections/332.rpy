@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section332:
 
     "You walk for nearly ten minutes along a dark and winding corridor, and then start to climb a steep staircase to a small wooden door."

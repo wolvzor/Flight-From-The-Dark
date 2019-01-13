@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section288:
 
     "As you reach the walls of the fieldworks, the large oak gates open and you are quickly hurried inside. A sergeant, bloodstained and battle-weary, calls to an officer who turns and recognizes your cloak."

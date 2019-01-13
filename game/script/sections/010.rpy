@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section010:
 
     "You are sweating and your legs ache. In the middle distance you can see a group of cottages."

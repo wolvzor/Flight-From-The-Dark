@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section115:
 
     "You stumble into the first building and fall to the floor exhausted."

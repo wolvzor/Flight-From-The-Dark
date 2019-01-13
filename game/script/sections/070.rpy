@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section070:
 
     # TODO This has a picture! https://www.projectaon.org/en/xhtml/lw/01fftd/sect70.htm

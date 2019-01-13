@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section130:
 
     "You soon reach a small clearing in the woods. A bench, carved from a fallen tree is set in the centre of the clearing. You are hungry and must now eat a Meal here."

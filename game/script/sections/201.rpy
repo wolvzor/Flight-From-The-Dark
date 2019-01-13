@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section201:
 
     "You follow the rough track for nearly an hour when you notice ahead of you another wider path branching off towards the south."

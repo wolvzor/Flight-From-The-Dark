@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section058:
 
     "Bracing yourself for the run, you head off down the ridge at a steady pace. To the west, the army of the Darklords looks like a giant pot of black ink that has been spilled between the mountains and is spreading into the land below."

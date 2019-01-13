@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section155:
 
     "As you approach, the group of people stop talking. You can see by their expressions that they recognize your green Kai cloak."

@@ -1,3 +1,6 @@
+init python:
+    pass
+
 label section180:
 
     "They see you raise your weapon, and they instantly attack you. If you decide to fight them, you must fight them one at a time."

@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section129:
 
     "You reach the main gates of the capital, and stare in awe at the height of the city’s walls. Two hundred feet high, the walls of Holmgard have withstood the ravages of both time and the Darklords."

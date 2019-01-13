@@ -1,3 +1,6 @@
+init python:
+    passive_heal_check()
+
 label section001:
 
     "You must make haste for you sense it is not safe to linger by the smoking remains of the ruined monastery. The black-winged beasts could return at any moment."
