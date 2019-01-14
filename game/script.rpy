@@ -4,16 +4,7 @@
 
 label start:
 
-    $ player_weapons = []
-    $ player_backpack_items = []
-    $ player_gold_crowns = 0
-    $ player_special_items = []
-    $ discipline_list = [('Camouflage','Camouflage'),('Hunting','Hunting'),('Sixth Sense','Sixth Sense'),('Tracking','Tracking'),('Healing','Healing'),('Weaponskill','Weaponskill'),('Mindshield','Mindshield'),('Mindblast','Mindblast'),('Animal Kinship','Animal Kinship'),('Mind Over Matter','Mind Over Matter')]
-    $ player_discipline_list = []
-    $ combat_score = 0
-    $ combat_score_current = 0
-    $ endurance = 0
-    $ endurance_current = 0
+    $ character = Character()
 
     scene bg map
 
