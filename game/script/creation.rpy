@@ -72,38 +72,28 @@ label creation:
 
     "Pick your first discipline."
 
-    $ first_discipline = renpy.display_menu(character.discipline_list)
-    $ character.player_discipline_list.append(first_discipline)
-    $ character.discipline_list = [item for item in character.discipline_list if item[0] != first_discipline]
+    $ first_discipline = assign_discipline(renpy.display_menu(character.discipline_list))
 
     "You picked %(first_discipline)s as your first discipline."
     "Pick your second discipline."
 
-    $ second_discipline = renpy.display_menu(character.discipline_list)
-    $ character.player_discipline_list.append(second_discipline)
-    $ character.discipline_list = [item for item in character.discipline_list if item[0] != second_discipline]
+    $ second_discipline = assign_discipline(renpy.display_menu(character.discipline_list))
 
     "You picked %(second_discipline)s as your second discipline."
     "Pick your third discipline."
 
-    $ third_discipline = renpy.display_menu(character.discipline_list)
-    $ character.player_discipline_list.append(third_discipline)
-    $ character.discipline_list = [item for item in character.discipline_list if item[0] != third_discipline]
+    $ third_discipline = assign_discipline(renpy.display_menu(character.discipline_list))
 
     "You picked %(third_discipline)s as your third discipline."
     "Pick your fourth discipline."
 
-    $ fourth_discipline = renpy.display_menu(character.discipline_list)
-    $ character.player_discipline_list.append(fourth_discipline)
-    $ character.discipline_list = [item for item in character.discipline_list if item[0] != fourth_discipline]
+    $ fourth_discipline = assign_discipline(renpy.display_menu(character.discipline_list))
 
     "You picked %(fourth_discipline)s as your fourth discipline."
     "Pick your fifth discipline."
 
-    $ fifth_discipline = renpy.display_menu(character.discipline_list)
-    $ character.player_discipline_list.append(fifth_discipline)
-    $ character.discipline_list = [item for item in character.discipline_list if item[0] != fifth_discipline]
-    # TODO: make this more human readable
+    $ fifth_discipline = assign_discipline(renpy.display_menu(character.discipline_list))
+
     $ player_discipline_list_string = ', '.join(character.player_discipline_list)
 
     "You picked %(fifth_discipline)s as your fifth discipline."
