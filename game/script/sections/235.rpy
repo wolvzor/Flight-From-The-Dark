@@ -6,7 +6,7 @@ label section235:
 
     "You are hungry and must eat a Meal during your ride."
 
-    # TODO Meal stuff
+    $ meal_check()
 
     "After several miles, the path stops abruptly at a junction. There is a signpost, but it has been hacked down."
 

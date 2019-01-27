@@ -16,7 +16,7 @@ This is very much a WIP; updates will be sporadic at best.
 - Random item now given at character creation
 
 # Outstanding Bugs
-
+- N/A 
 
 # TODO 
 - Basic combat functions

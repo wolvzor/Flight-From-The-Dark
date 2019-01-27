@@ -4,7 +4,7 @@ label section130:
 
     "You soon reach a small clearing in the woods. A bench, carved from a fallen tree is set in the centre of the clearing. You are hungry and must now eat a Meal here."
 
-    # TODO MEAL STUFF
+    $ meal_check()
 
     menu:
         "When you have finished, if you decide to leave the clearing by the south way, turn to 28.":
