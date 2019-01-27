@@ -1,6 +1,6 @@
 label section350:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     #TODO This has a picture! https://www.projectaon.org/en/xhtml/lw/01fftd/sect350.htm
 

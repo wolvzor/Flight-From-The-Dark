@@ -4,49 +4,39 @@ init python:
     def random_item(random_int):
         statement = ''
         if (random_int == 1):
-            global player_weapons
-            player_weapons.append("Sword");
+            character.player_weapons.append("Sword");
             statement = "a Sword"
         elif (random_int == 2):
-            global player_special_items
-            player_special_items.append("Helmet");
-            endurance_score = endurance_score + 2;
-            endurance_current = endurance_current + 2;
+            character.player_special_items.append("Helmet");
+            character.endurance = character.endurance + 2;
+            character.endurance_current = character.endurance_current + 2;
             statement = "a Helmet"
         elif (random_int == 3):
-            global player_backpack_items
-            player_backpack_items.append("Meal");
-            player_backpack_items.append("Meal");
+            character.player_backpack_items.append("Meal");
+            character.player_backpack_items.append("Meal");
             statement = "two Meals"
         elif (random_int == 4):
-            global player_special_items
-            player_special_items.append("Chainmail Waistcoat");
-            endurance_score = endurance_score + 4;
-            endurance_current = endurance_current + 4;
+            character.player_special_items.append("Chainmail Waistcoat");
+            character.endurance = character.endurance + 4;
+            character.endurance_current = character.endurance_current + 4;
             statement = "a Chainmail Waistcoat"
         elif (random_int == 5):
-            global player_weapons
-            player_weapons.append("Mace");
+            character.player_weapons.append("Mace");
             statement = "a Mace"
         elif (random_int == 6):
-            global player_backpack_items
-            player_backpack_items.append("Healing Potion");
+            character.player_backpack_items.append("Healing Potion");
             statement = "a Healing Potion"
         elif (random_int == 7):
-            global player_weapons
-            player_weapons.append("Quarterstaff");
+            character.player_weapons.append("Quarterstaff");
             statement = "a Quarterstaff"
         elif (random_int == 8):
-            global player_weapons
-            player_weapons.append("Spear");
+            character.player_weapons.append("Spear");
             statement = "a Spear"
         elif (random_int == 9):
-            global player_gold_crowns
-            player_gold_crowns += 12;
+            character.player_gold_crowns += 12;
             statement = "twelve Gold Crowns"
         else:
-            global player_weapons
-            player_weapons.append("Broadsword");
+            character.player_weapons.append("Broadsword");
             statement = "a Broadsword"
         return statement
 
@@ -56,9 +46,11 @@ label creation:
     "During your training as a Kai Lord you have developed fighting prowess—COMBAT SKILL and physical stamina—ENDURANCE."
 
     $ combat_score = renpy.random.randint(10,19)
-    $ combat_score_current = combat_score
+    $ character.combat_score = combat_score
+    $ character.combat_score_current = character.combat_score
     $ endurance = renpy.random.randint(20,29)
-    $ endurance_current = endurance
+    $ character.endurance = endurance
+    $ character.endurance_current = character.endurance
 
     "You have the following starting values for your COMBAT SKILL and ENDURANCE: %(combat_score)d and %(endurance)d."
 
@@ -80,39 +72,39 @@ label creation:
 
     "Pick your first discipline."
 
-    $ first_discipline = renpy.display_menu(discipline_list)
-    $ player_discipline_list.append(first_discipline)
-    $ discipline_list = [item for item in discipline_list if item[0] != first_discipline]
+    $ first_discipline = renpy.display_menu(character.discipline_list)
+    $ character.player_discipline_list.append(first_discipline)
+    $ character.discipline_list = [item for item in character.discipline_list if item[0] != first_discipline]
 
     "You picked %(first_discipline)s as your first discipline."
     "Pick your second discipline."
 
-    $ second_discipline = renpy.display_menu(discipline_list)
-    $ player_discipline_list.append(second_discipline)
-    $ discipline_list = [item for item in discipline_list if item[0] != second_discipline]
+    $ second_discipline = renpy.display_menu(character.discipline_list)
+    $ character.player_discipline_list.append(second_discipline)
+    $ character.discipline_list = [item for item in character.discipline_list if item[0] != second_discipline]
 
     "You picked %(second_discipline)s as your second discipline."
     "Pick your third discipline."
 
-    $ third_discipline = renpy.display_menu(discipline_list)
-    $ player_discipline_list.append(third_discipline)
-    $ discipline_list = [item for item in discipline_list if item[0] != third_discipline]
+    $ third_discipline = renpy.display_menu(character.discipline_list)
+    $ character.player_discipline_list.append(third_discipline)
+    $ character.discipline_list = [item for item in character.discipline_list if item[0] != third_discipline]
 
     "You picked %(third_discipline)s as your third discipline."
     "Pick your fourth discipline."
 
-    $ fourth_discipline = renpy.display_menu(discipline_list)
-    $ player_discipline_list.append(fourth_discipline)
-    $ discipline_list = [item for item in discipline_list if item[0] != fourth_discipline]
+    $ fourth_discipline = renpy.display_menu(character.discipline_list)
+    $ character.player_discipline_list.append(fourth_discipline)
+    $ character.discipline_list = [item for item in character.discipline_list if item[0] != fourth_discipline]
 
     "You picked %(fourth_discipline)s as your fourth discipline."
     "Pick your fifth discipline."
 
-    $ fifth_discipline = renpy.display_menu(discipline_list)
-    $ player_discipline_list.append(fifth_discipline)
-    $ discipline_list = [item for item in discipline_list if item[0] != fifth_discipline]
+    $ fifth_discipline = renpy.display_menu(character.discipline_list)
+    $ character.player_discipline_list.append(fifth_discipline)
+    $ character.discipline_list = [item for item in character.discipline_list if item[0] != fifth_discipline]
     # TODO: make this more human readable
-    $ player_discipline_list_string = ', '.join(player_discipline_list)
+    $ player_discipline_list_string = ', '.join(character.player_discipline_list)
 
     "You picked %(fifth_discipline)s as your fifth discipline."
 
@@ -121,22 +113,23 @@ label creation:
     "You are dressed in the green tunic and cloak of a Kai initiate. You have little with you to arm yourself for survival."
 
     # TODO: Consider enums for objects?
-    $ player_weapons = ['Axe']
-    $ player_backpack_items = ['Meal']
+    $ character.player_weapons = ['Axe']
+    $ character.player_backpack_items = ['Meal']
 
     "All you possess is an Axe, and a Backpack containing 1 Meal."
 
-    $ player_gold_crowns = renpy.random.randint(0,9)
+    $ gold_crowns = renpy.random.randint(0,9)
+    $ character.player_gold_crowns = gold_crowns
 
-    "Hanging from your waist is a leather pouch containing %(player_gold_crowns)d Gold Crowns."
+    "Hanging from your waist is a leather pouch containing %(gold_crowns)d Gold Crowns."
 
-    $ player_special_items = ['Map of Sommerlund']
+    $ character.player_special_items = ['Map of Sommerlund']
 
     "You discover amongst the smoking ruins of the monastery, a Map of Sommerlund showing the capital city of Holmgard and the land of Durenor, far to the east. You place the Map inside your tunic for safety."
 
     # TODO Fix random number once saves have been fixed
-    # $ random_item_num = renpy.random.randint(0,9)
-    # $ statement = random_item(random_item_num)
+    $ random_item_num = renpy.random.randint(0,9)
+    $ statement = random_item(random_item_num)
 
     # "You also found one of the following: %(statement)s."
 

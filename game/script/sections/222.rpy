@@ -1,11 +1,11 @@
 label section222:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     "As you go on you discover a forest path that divides at the point you join it."
 
     menu:
-        "If you wish to use your Kai Discipline of Tracking, turn to 67." if 'Tracking' in player_discipline_list:
+        "If you wish to use your Kai Discipline of Tracking, turn to 67." if 'Tracking' in character.player_discipline_list:
             call section067
         "If you wish to take the south fork, turn to 140.":
             call section140
