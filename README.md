@@ -13,9 +13,10 @@ This is very much a WIP; updates will be sporadic at best.
 
 # Bug Fixes
 - Saving now maintains stat state
+- Random item now given at character creation
 
 # Outstanding Bugs
-- No random item given at character creation
+
 
 # TODO 
 - Basic combat functions
