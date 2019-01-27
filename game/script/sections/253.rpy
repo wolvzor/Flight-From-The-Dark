@@ -1,6 +1,6 @@
 label section253:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     "The Doomwolves are soon on you and you must fight them one at a time. You cannot evade."
 

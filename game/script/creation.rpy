@@ -8,7 +8,7 @@ init python:
             statement = "a Sword"
         elif (random_int == 2):
             character.player_special_items.append("Helmet");
-            character.endurance_score = character.endurance_score + 2;
+            character.endurance = character.endurance + 2;
             character.endurance_current = character.endurance_current + 2;
             statement = "a Helmet"
         elif (random_int == 3):
@@ -17,7 +17,7 @@ init python:
             statement = "two Meals"
         elif (random_int == 4):
             character.player_special_items.append("Chainmail Waistcoat");
-            character.endurance_score = character.endurance_score + 4;
+            character.endurance = character.endurance + 4;
             character.endurance_current = character.endurance_current + 4;
             statement = "a Chainmail Waistcoat"
         elif (random_int == 5):
@@ -52,7 +52,7 @@ label creation:
     $ character.endurance = endurance
     $ character.endurance_current = character.endurance
 
-    "You have the following starting values for your COMBAT SKILL and ENDURANCE: %(combat_score)r and %(endurance)r."
+    "You have the following starting values for your COMBAT SKILL and ENDURANCE: %(combat_score)d and %(endurance)d."
 
     "When you fight, your COMBAT SKILL will be pitted against that of your enemy. A high score in this section is therefore very desirable."
 
@@ -108,7 +108,7 @@ label creation:
 
     "You picked %(fifth_discipline)s as your fifth discipline."
 
-    "Your total disciplines are %(character.player_discipline_list_string)s"
+    "Your total disciplines are %(player_discipline_list_string)s"
 
     "You are dressed in the green tunic and cloak of a Kai initiate. You have little with you to arm yourself for survival."
 
@@ -118,9 +118,10 @@ label creation:
 
     "All you possess is an Axe, and a Backpack containing 1 Meal."
 
-    $ character.player_gold_crowns = renpy.random.randint(0,9)
+    $ gold_crowns = renpy.random.randint(0,9)
+    $ character.player_gold_crowns = gold_crowns
 
-    "Hanging from your waist is a leather pouch containing %(player_gold_crowns)d Gold Crowns."
+    "Hanging from your waist is a leather pouch containing %(gold_crowns)d Gold Crowns."
 
     $ character.player_special_items = ['Map of Sommerlund']
 

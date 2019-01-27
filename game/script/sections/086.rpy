@@ -1,6 +1,6 @@
 label section086:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     "You soon reach another crossroads."
 

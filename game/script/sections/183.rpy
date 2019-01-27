@@ -1,6 +1,6 @@
 label section183:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     "The officer orders his men to halt and asks you your business. You tell him who you are, and how the monastery has been destroyed. He is deeply saddened to hear your news. He offers you a horse and asks you to accompany him to Prince Pelathar, the King’s son."
 

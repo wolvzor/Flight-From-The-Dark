@@ -1,6 +1,6 @@
 label section130:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     "You soon reach a small clearing in the woods. A bench, carved from a fallen tree is set in the centre of the clearing. You are hungry and must now eat a Meal here."
 

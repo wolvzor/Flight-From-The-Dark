@@ -1,6 +1,6 @@
 label section235:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     "The Prince’s horse is indeed a magnificent animal, fast and sure of foot. You gallop along the twisting track as if it were a straight highway, until the noise of battle has disappeared far behind you."
 
@@ -11,7 +11,7 @@ label section235:
     "After several miles, the path stops abruptly at a junction. There is a signpost, but it has been hacked down."
 
     menu:
-        "If you wish to use your Kai Discipline of Tracking, turn to 254." if 'Tracking' in player_discipline_list:
+        "If you wish to use your Kai Discipline of Tracking, turn to 254." if 'Tracking' in character.player_discipline_list:
             call section254
         "If you wish to turn left, go to 32.":
             call section032

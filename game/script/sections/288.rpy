@@ -1,6 +1,6 @@
 label section288:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     "As you reach the walls of the fieldworks, the large oak gates open and you are quickly hurried inside. A sergeant, bloodstained and battle-weary, calls to an officer who turns and recognizes your cloak."
 

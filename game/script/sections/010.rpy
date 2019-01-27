@@ -1,6 +1,6 @@
 label section010:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     "You are sweating and your legs ache. In the middle distance you can see a group of cottages."
 

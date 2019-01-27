@@ -1,6 +1,6 @@
 label section180:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     "They see you raise your weapon, and they instantly attack you. If you decide to fight them, you must fight them one at a time."
 

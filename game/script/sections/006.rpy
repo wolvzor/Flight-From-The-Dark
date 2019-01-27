@@ -1,6 +1,6 @@
 label section006:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     # TODO This has a picture! https://www.projectaon.org/en/xhtml/lw/01fftd/sect6.htm
     "In the distance you can hear the sound of horses galloping nearer. You crouch behind a tree and wait as the riders come closer. They are the cavalry of the King’s Guard wearing the white uniforms of His Majesty’s army."

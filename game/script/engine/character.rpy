@@ -8,7 +8,7 @@ init python:
             self.player_special_items = []
             self.discipline_list = [('Camouflage','Camouflage'),('Hunting','Hunting'),('Sixth Sense','Sixth Sense'),('Tracking','Tracking'),('Healing','Healing'),('Weaponskill','Weaponskill'),('Mindshield','Mindshield'),('Mindblast','Mindblast'),('Animal Kinship','Animal Kinship'),('Mind Over Matter','Mind Over Matter')]
             self.player_discipline_list = []
-            self.combat_score = 15
-            self.combat_score_current = 15
-            self.endurance = 15
-            self.endurance_current = 15
+            self.combat_score = 1
+            self.combat_score_current = 1
+            self.endurance = 1
+            self.endurance_current = 1

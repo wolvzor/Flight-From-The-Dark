@@ -1,6 +1,6 @@
 label section201:
 
-    $ passive_heal_check(endurance_current, endurance)
+    $ passive_heal_check(character.endurance_current, character.endurance)
 
     "You follow the rough track for nearly an hour when you notice ahead of you another wider path branching off towards the south."
 
