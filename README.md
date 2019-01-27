@@ -10,6 +10,7 @@ This is very much a WIP; updates will be sporadic at best.
 - Simple path from 1 -> 350
 - Death management / screen
 - Healing Discipline (heals per each non-combat scene)
+- Meal management
 
 # Bug Fixes
 - Saving now maintains stat state
@@ -21,7 +22,6 @@ This is very much a WIP; updates will be sporadic at best.
 # TODO 
 - Basic combat functions
 - Inventory management
-- Meal management
 - Endurance point management
 - Weaponskill bonus
 - Multiple weaponskill selection
