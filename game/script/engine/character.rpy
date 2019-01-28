@@ -10,7 +10,7 @@ init python:
             self.player_discipline_list = []
             self.weaponskill_list = ['Dagger','Spear','Mace','Short Sword','Warhammer','Sword','Axe','Sword','Quarterstaff','Broadsword']
             self.player_weaponskill_list = []
-            self.combat_score = 1
-            self.combat_score_current = 1
+            self.combat_skill = 1
+            self.combat_skill_current = 1
             self.endurance = 1
             self.endurance_current = 1

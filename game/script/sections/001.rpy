@@ -2,6 +2,18 @@ label section001:
 
     $ passive_heal_check(character.endurance_current, character.endurance)
 
+
+    # Sample Combat; remove once tested
+
+    "Leader: COMBAT SKILL 15   ENDURANCE 22"
+
+
+    $ leader = Enemy("Leader", 15, 22)
+    "[leader.name]: COMBAT SKILL [leader.combat_skill] ENDURANCE [leader.endurance]"
+
+    # TODO: This seems dumb. Why is it losing these values? >_>
+    $ combat("Leader", 15, 22)
+
     "You must make haste for you sense it is not safe to linger by the smoking remains of the ruined monastery. The black-winged beasts could return at any moment."
     "You must set out for the Sommlending capital of Holmgard and tell the King the terrible news of the massacre: that the whole élite of Kai warriors, save yourself, have been slaughtered."
     "Without the Kai Lords to lead her armies, Sommerlund will be at the mercy of their ancient enemy, the Darklords."

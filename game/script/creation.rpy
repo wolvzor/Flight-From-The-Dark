@@ -45,14 +45,14 @@ label creation:
 
     "During your training as a Kai Lord you have developed fighting prowess—COMBAT SKILL and physical stamina—ENDURANCE."
 
-    $ combat_score = renpy.random.randint(10,19)
-    $ character.combat_score = combat_score
-    $ character.combat_score_current = character.combat_score
+    $ combat_skill = renpy.random.randint(10,19)
+    $ character.combat_skill = combat_skill
+    $ character.combat_skill_current = character.combat_skill
     $ endurance = renpy.random.randint(20,29)
     $ character.endurance = endurance
     $ character.endurance_current = character.endurance
 
-    "You have the following starting values for your COMBAT SKILL and ENDURANCE: %(combat_score)d and %(endurance)d."
+    "You have the following starting values for your COMBAT SKILL and ENDURANCE: %(combat_skill)d and %(endurance)d."
 
     "When you fight, your COMBAT SKILL will be pitted against that of your enemy. A high score in this section is therefore very desirable."
 
